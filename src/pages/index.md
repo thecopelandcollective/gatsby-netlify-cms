@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: The Gentleman Designer - A blog
-image: /img/home-jumbotron.jpg
+title: The (sometimes) incoherent ramblings of a professional designer
+image: /img/blog01-image.png
 heading: The (sometimes) incoherent ramblings of a professional designer
 subheading: Grab some coffee, this may take a while.
 mainpitch:
