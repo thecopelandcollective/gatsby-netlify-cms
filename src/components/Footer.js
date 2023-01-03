@@ -10,15 +10,8 @@ import vimeo from "../img/social/vimeo.svg";
 const Footer = () => {
 
     return (
-      <footer className="footer">
-        <div className="content has-text-centered" style="border-top: 2px solid #333;">
-          <img
-            src={logo}
-            alt="The Gentleman Designer"
-            style={{ width: "14em", height: "auto" }}
-          />
-        </div>
-        <div className="content has-text-centered">
+      <footer className="footer has-background-black has-text-white-ter">
+        <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
             <div style={{ maxWidth: "100vw" }} className="columns">
               <div className="column is-4">
@@ -31,6 +24,10 @@ const Footer = () => {
                     </li>
                   </ul>
                 </section>
+              </div>
+              <div className="column is-4">
+              </div>
+              <div className="column is-4 social">
               </div>
             </div>
           </div>
