@@ -26,10 +26,10 @@ const BlogRollTemplate = (props) => {
                   >
                     {post.frontmatter.title}
                   </Link>
-                  <span className="subtitle is-size-6 is-block">
+                  </p>
+                  <p className="subtitle is-size-6 is-block">
                     {post.frontmatter.date}
-                  </span>
-                </p>
+                  </p>
               </header>
               <body>
               <div className="is-child column is-4">
