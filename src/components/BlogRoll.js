@@ -31,6 +31,7 @@ const BlogRollTemplate = (props) => {
                   </span>
                 </p>
               </header>
+              <body>
               <div className="is-child column is-4">
               {post?.frontmatter?.featuredimage && (
                 <div className="featured-thumbnail">
@@ -59,6 +60,7 @@ const BlogRollTemplate = (props) => {
                   </Link>
                 </p>
               </div>
+              </body>
             </article>
           </div>
         ))}
