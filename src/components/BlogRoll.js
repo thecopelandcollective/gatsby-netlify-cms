@@ -26,12 +26,12 @@ const BlogRollTemplate = (props) => {
                   >
                     {post.frontmatter.title}
                   </Link>
-                  <span className="subtitle is-size-4 is-block">
+                  <span className="subtitle is-size-6 is-block">
                     {post.frontmatter.date}
                   </span>
                 </p>
               </header>
-              <div className="column is-4">
+              <div className="is-child column is-4">
               {post?.frontmatter?.featuredimage && (
                 <div className="featured-thumbnail">
                   <PreviewCompatibleImage
@@ -49,7 +49,7 @@ const BlogRollTemplate = (props) => {
                 </div>
               ) }
               </div>
-              <div className="column is-8">
+              <div className="is-child column is-8">
                 <p>
                   {post.excerpt}
                   <br />
