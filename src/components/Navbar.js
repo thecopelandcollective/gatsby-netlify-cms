@@ -16,15 +16,6 @@ const Navbar = () => {
           <Link to="/" className="navbar-item" title="Logo">
             <img src={logo} alt="The Gentleman Designer" style={{ width: "150px", height: "95.1274px" }} />
           </Link>
-          {/* Hamburger menu */}
-          <button
-            className={`navbar-burger burger ${isActive && "is-active"}`}
-            aria-expanded={isActive}
-            onClick={() => setIsActive(!isActive)}>
-            <span />
-            <span />
-            <span />
-          </button>
         </div>
       </div>
     </nav>
