@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-brand">
           <Link to="/" className="navbar-item" title="Logo">
-            <img src={logo} alt="The Gentleman Designer" style={{ width: "150px", height: "95.1274px" }} />
+            <img className="logo-img" src={logo} alt="The Gentleman Designer" />
           </Link>
         </div>
       </div>
