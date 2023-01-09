@@ -79,11 +79,6 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-  );
-};
-const Template = () => (
-    /* Page contents */
-
     <Disqus
         config={
             /* Replace PAGE_URL with your post's canonical URL variable */
@@ -94,7 +89,8 @@ const Template = () => (
             title: 'PAGE_TITLE',
         }
     />
-);
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
