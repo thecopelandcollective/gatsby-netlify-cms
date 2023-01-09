@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import { Disqus } from 'gatsby-plugin-disqus';
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -13,6 +14,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  disqus,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -75,6 +77,16 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+      />
+      <Disqus
+          config={
+              /* Replace PAGE_URL with your post's canonical URL variable */
+              url: 'PAGE_URL',
+              /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+              identifier: 'PAGE_IDENTIFIER',
+              /* Replace PAGE_TITLE with the title of the page */
+              title: 'PAGE_TITLE',
+          }
       />
     </Layout>
   );
