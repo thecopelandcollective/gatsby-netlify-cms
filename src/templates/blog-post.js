@@ -90,7 +90,8 @@ BlogPost.propTypes = {
 
 export default BlogPost;
 
-export const pageQuery = graphql`
+export const pageQuery = graphql
+`
   query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
@@ -103,7 +104,8 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`
+;
     <Disqus
         config={
             /* Replace PAGE_URL with your post's canonical URL variable */
