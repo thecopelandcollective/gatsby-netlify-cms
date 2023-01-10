@@ -6,6 +6,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { Disqus } from 'gatsby-plugin-disqus';
+import {DiscussionEmbed} from 'disqus-react';
 
 // const Template = () => (
 // eslint-disable-next-line
@@ -18,6 +19,16 @@ export const BlogPostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
+
+  let siteMeta = get(this.props, 'data.site.siteMetadata');
+
+    let disqusProps = {
+      shortname: siteMeta.disqus.shortName,
+      config: {
+        identifier: post.id, // identify of the post
+        title     : post.frontmatter.title, // title of the post
+      },
+    };
 
   return (
     <section className="section">
@@ -78,6 +89,7 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
+      <DiscussionEmbed {...disqusProps}/>
     </Layout>
   );
 };
