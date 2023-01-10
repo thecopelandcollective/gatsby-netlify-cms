@@ -14,7 +14,6 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  disqus,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -41,6 +40,16 @@ export const BlogPostTemplate = ({
                   ))}
                 </ul>
               </div>
+              <Disqus
+                config={
+                    /* Replace PAGE_URL with your post's canonical URL variable */
+                    url: 'PAGE_URL',
+                    /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+                    identifier: 'PAGE_IDENTIFIER',
+                    /* Replace PAGE_TITLE with the title of the page */
+                    title: 'PAGE_TITLE',
+                }
+            />
             ) : null}
           </div>
         </div>
@@ -79,16 +88,6 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-    // <Disqus
-    //   config={
-    //     /* Replace PAGE_URL with your post's canonical URL variable */
-    //     url: 'PAGE_URL',
-    //     /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
-    //     identifier: 'PAGE_IDENTIFIER',
-    //     /* Replace PAGE_TITLE with the title of the page */
-    //     title: 'PAGE_TITLE',
-    //   }
-    // />
   );
 };
 
