@@ -7,7 +7,6 @@ import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { Disqus } from 'gatsby-plugin-disqus';
 
-// const Template = () => (
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
   content,
@@ -15,7 +14,6 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  disqus,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
@@ -25,7 +23,7 @@ export const BlogPostTemplate = ({
       {helmet || ""}
       <div className="container content">
         <div className="columns">
-          <div className="column is-8 is-offset-2">
+          <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -79,6 +77,16 @@ const BlogPost = ({ data }) => {
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
+      <Disqus
+        config={
+            /* Replace PAGE_URL with your post's canonical URL variable */
+            url: 'PAGE_URL',
+            /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+            identifier: 'PAGE_IDENTIFIER',
+            /* Replace PAGE_TITLE with the title of the page */
+            title: 'PAGE_TITLE',
+        }
+    />
     </Layout>
   );
 };
@@ -91,8 +99,7 @@ BlogPost.propTypes = {
 
 export default BlogPost;
 
-export const pageQuery = graphql
-`
+export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
@@ -105,16 +112,4 @@ export const pageQuery = graphql
       }
     }
   }
-`
-;
-//     <Disqus
-//         config={
-//             /* Replace PAGE_URL with your post's canonical URL variable */
-//             url: 'PAGE_URL',
-//             /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
-//             identifier: 'PAGE_IDENTIFIER',
-//             /* Replace PAGE_TITLE with the title of the page */
-//             title: 'PAGE_TITLE',
-//         }
-//     />
-// );
+`;

@@ -3,9 +3,9 @@ module.exports = {
     title: "The Gentleman Designer",
     description:
       "A blog for designers. I discuss topics like Imposter Syndrome, User Experience, Graphic Design, Mobile App Design, workplace ancedotes, coffee, and anything else my crazy mind thinks up.",
-      disqus: {
-        shortName: 'thegentlemandesigner-com',
-      },
+    disqus: {
+      shortName: 'thegentlemandesigner-com',
+    },
   },
   plugins: [
     "gatsby-plugin-react-helmet",
