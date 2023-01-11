@@ -7,6 +7,9 @@ featuredpost: true
 featuredimage: /img/pexels-laurentiu-robu-2375034.jpeg
 tags:
   - design
+  - designers
+  - career
+  - life
 ---
 There is one big lie designers live with but it’s undermining our work and confidence.
 
@@ -18,11 +21,11 @@ In 2019 I decided to exclusively focus on User Experience Design. Up to that poi
 
 I﻿ had heard of Imposter syndrome from other design blogs, but now I was experiencing it.
 
-Was I good enough?
+**Was I good enough?**
 
-Could I handle the task at hand?
+**Could I handle the task at hand?**
 
-Will they find out I have no clue what I'm doing?
+**Will they find out I have no clue what I'm doing?**
 
 We all feel like that at some point in our careers. The lie comes when we tell ourselves that we are alone and no one else feels like we do.
 
