@@ -28,8 +28,8 @@ const Footer = () => {
               <div className="column is-4">
               </div>
               <div className="column is-4">
-                <Link to="/" className="f" title="footer-logo">
-                  <img className="logo-img" src={logo} alt="The Gentleman Designer" />
+                <Link to="/" className="footer-logo" title="Logo">
+                  <img src={logo} alt="The Gentleman Designer" />
                 </Link>
               </div>
             </div>
