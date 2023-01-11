@@ -28,7 +28,7 @@ const Footer = () => {
               <div className="column is-4">
               </div>
               <div className="column is-4">
-                <Link to="/" className="" title="Logo">
+                <Link to="/" className="logo-footer" title="Logo">
                   <img className="logo-img" src={logo} alt="The Gentleman Designer" />
                 </Link>
               </div>
