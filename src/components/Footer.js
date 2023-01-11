@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import logo from "../img/logo.svg";
+import logo from "../img/logo-reverse.png";
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
@@ -27,7 +27,10 @@ const Footer = () => {
               </div>
               <div className="column is-4">
               </div>
-              <div className="column is-4 social">
+              <div className="column is-4">
+                <Link to="/" className="" title="Logo">
+                  <img className="logo-img" src={logo} alt="The Gentleman Designer" />
+                </Link>
               </div>
             </div>
           </div>
